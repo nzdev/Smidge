@@ -26,7 +26,7 @@ namespace Smidge.TagHelpers
         private const string AppendVersionAttributeName = "asp-append-version";
         private const string HrefAttributeName = "href";
 
-        private readonly HashSet<string> _invalid = new()
+        private static readonly HashSet<string> _invalid = new()
         {
             HrefIncludeAttributeName,
             HrefExcludeAttributeName,
